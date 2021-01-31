@@ -1,0 +1,400 @@
+#loanErr,
+#interestErr,
+#monthsErr,
+.map_tab,
+.calc_tab,
+.comp_tab, #response, #dates, #table, #nameB, #name, #datesB, #titles, nav, div, #wrapper, a, header, body, h1, h2, p, li, ul, footer {padding: 0; margin: 0;}
+
+header svg {
+    width: 103px;
+    height: 60px;
+}
+body header p {
+    margin: 0 auto;
+    /* outline: 1px solid black; */
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    font-size: 0.8em;
+}
+header h1 {
+    font-size: 1.6rem;
+}
+
+header * {
+    padding-left: 2%;
+}
+div#tableCopy {
+    width: 100%;
+    height: 400px;
+    background-color: #e7e7e7;
+}
+
+div#mapCopy {
+    width: 100%;
+    height: 400px;
+    background-color: #e7e7e7;
+}
+
+header a {float:right; color: white; margin-top: -131px;
+    margin-right: 40px;}
+
+th {background-color: #E6E6E6;}
+tr {
+    border-bottom: #cccccc 1px solid;
+    height: 61px;
+}
+body td:nth-child(5) {
+    background-color: #e1e1e1;
+}
+
+td {
+    border-left: 1px solid #cccccc;
+}
+
+#loanErr {display:none;}
+#interestErr {display:none;}
+#monthsErr {display:none;}
+
+.errorMap {display:none;}
+.error {display:none;}
+
+
+.add_property {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#addListProp {
+    width: 530px;
+}
+
+body div#labels {
+    float: left;
+}
+
+/* article #fields input {*/
+
+div#labels p {
+    text-align: right;
+}
+
+#error p {
+    line-height: 16px;
+    color:red;
+}
+
+#monthsErr {
+    position: absolute;
+    margin-top: 142px;
+    margin-left: 72px;
+}
+
+#interestErr {
+    position: absolute;
+    margin-top: 113px;
+    margin-left: 73px;
+}
+
+
+#loanErr {
+    position: absolute;
+    margin-top: 86px;
+    margin-left: 73px;
+}
+
+
+#error {display:none;
+    float: right;
+    margin-top: -76px;
+
+}
+
+.dates {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+article:nth-of-type(2) {width: 510px;  min-height: 530px;
+    background-color: #E6E6E6;     margin-top: 48px;
+}
+
+.map_tab {     margin: 0px 5px;
+
+    background-color: white; float: left;
+    width: 70px;
+    height: 30px;}
+
+
+.map_tab p{
+    text-align: center;}
+
+
+.calc_tab p{
+    text-align: center;}
+
+
+
+.comp_tab p{
+    text-align: center;}
+
+
+.calc_tab { background-color: white;
+    width: 70px;     float: left;     margin: 0px 5px;
+
+
+    height: 30px;}
+.comp_tab { background-color: white;
+    width: 70px;     float: left;
+
+    height: 30px;     margin: 0px 5px;
+
+}
+
+.datesB {
+    text-align: center;}
+
+.name {
+    width: 33%;
+    /*float: left;*/
+    text-align: center;
+    text-decoration: underline;
+}
+
+div#table {
+    margin: 40px;
+    border: 1px solid black;
+    width : 510px;
+    border-color : #E6E6E6;
+    border-bottom : thick solid #E6E6E6;
+    border-left : thick solid #E6E6E6;
+    border-right : thick solid #E6E6E6;
+    border-right-width : 50px;
+    border-left-width : 50px;
+    border-bottom-width : 150px;
+}
+
+table {
+    background-color: #e6e6e6;
+}
+
+.nameB {
+    width: 59%;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.row1 {
+    background-color: blue;
+}
+
+
+#titles {background-color: blue; border: 1px solid black;}
+
+
+form {
+    padding: 10px 0 10px 0;
+}
+
+nav {border-style: solid;
+    border-width: 1px;}
+nav ul {padding: 5px;}
+
+
+
+.tabs {
+    background-color: #ebebeb;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    min-width: 260px;
+    min-height: 470px;
+}
+
+legend {
+    margin-bottom: -20px;
+    padding-top: 15px;
+
+}
+
+ article:nth-of-type(1) fieldset {color:blue;}
+fieldset {
+    padding: 14px;
+}
+
+header {background-color: #6565ff; border-width: 1px 0 1px 0;}
+header {color:white;
+    border-width: 1px 0 1px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;}
+.clear {clear: both;}
+
+.name {float:left;}
+
+
+.name1 {float:left;
+    background-color: #62BEF1;
+    width: 33%;
+    text-align: center;
+}
+
+.date {
+    border-left: 1px solid black;
+    text-align: center;
+    width: 33%;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.address {
+    float: left;
+    background-color: #62BEF1;
+    text-align: center;
+    width: 35%;
+    float: left;
+}
+
+.contact {
+    float: right;
+}
+
+.delete {
+    text-align: center;
+    width: 33%;
+    float: left;
+    text-decoration: underline;
+
+}
+
+
+.city {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 25%;
+    float: left;
+
+}
+
+.state {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 10%;
+    float: left;
+
+}
+
+
+.zip {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 10%;
+    float: left;
+
+}
+
+.amount {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 20%;
+    float: left;
+
+}
+
+#acknowledgement{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    display: none;
+    top: 200px;
+}
+
+#savingcms
+{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    display: none;
+    top: 200px;
+
+
+}
+header p input {margin-top: 20px;}
+
+div#contact {
+    float: right;
+    display: inline;
+}
+
+input#second {
+    margin-left: -20px;
+}
+
+label {
+    display: block;
+}
+
+
+label p{
+    text-align: right;
+}
+
+
+input#fileName {
+    display: block;
+}
+
+ article input {display:block;}
+
+#map {width:510px;
+      height:480px;
+}
+
+.remove {color:blue;}
+.view {color:blue;}
+.view:hover{cursor: pointer;}
+.remove:hover{cursor: pointer;}
+
+#answer {display:none;
+}
+#answer p {
+    float: right;
+    width: 230px;
+    color: blue;
+    margin-top: -68px;
+}
+
+
+.map_tab, .calc_tab, .comp_tab:hover{cursor: pointer;}
+
+
+
+/*tab stuff*/
+.tab-list {  border-bottom: 1px solid #ccc;
+    padding-left: 0;
+  }
+  
+  .tab-list-item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .tab-list-active {
+    background-color: white;
+    border: solid #ccc;
+    border-width: 1px 1px 0 1px;
+  }

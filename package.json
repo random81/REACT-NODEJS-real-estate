@@ -1,0 +1,102 @@
+{
+  "name": "ern-real-estate",
+  "version": "0.1.0",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "css-loader": "^5.0.1",
+    "express": "4.17.1",
+    "immutability-helper": "^3.1.1",
+    "jquery": "^3.5.1",
+    "npm-check-updates": "^11.0.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-number-format": "^4.4.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.9.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint . --fix",
+    "buildDev": "webpack --mode=development --config webpack.config.js && webpack --mode=development --config webpack.config_e6.server.js",
+    "build": "webpack --mode=production --config webpack.config.front.production.js && webpack --mode=production --config webpack.config_e6.server.js",
+    "report_prod": "npm run prod --webpackAnalysis true",
+    "report_dev": "npm run dev --webpackAnalysis true",
+    "start": "NODE_ENV=development node ./buildServer/server.generated.js",
+    "dev": "npm run buildDev && node ./buildServer/server.generated.js",
+    "prod": "npm run build && NODE_ENV=production node ./buildServer/server.generated.js"
+  },
+  "nodemonConfig": {
+    "exec": "webpack --mode=development --config webpack.config_e6.server.js && node ./dist/server.generated.js",
+    "watch": [
+      "./backend"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@hot-loader/react-dom": "^17.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.3.4",
+    "react-hot-loader": "^4.13.0",
+    "webpack": "^5.17.0",
+    "webpack-bundle-analyzer": "^4.4.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
